@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_product"
+        android:text="@string/text_Product"/>
+    <EditText
+        android:layout_below="@id/text_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Product"
+        android:hint="@string/hint_Product"/>
+
+    <TextView
+        android:layout_below="@id/edit_Product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_Amount"
+        android:text="@string/text_Amount"/>
+    <EditText
+        android:layout_below="@id/text_Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Amount"
+
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_Amount"/>
+
+    <TextView
+        android:layout_below="@id/edit_Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_unit"
+        android:text="@string/text_unit"/>
+    <Spinner
+        android:layout_below="@id/text_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_unit"
+        android:entries="@array/array_unit"/>
+
+    <TextView
+        android:layout_below="@id/edit_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_store"
+        android:text="@string/text_Store"/>
+    <EditText
+        android:layout_below="@id/text_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Store"
+        android:hint="@string/hint_Store"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hinzufügen"
+        android:layout_below="@id/edit_Store"
+        android:id="@+id/button_add"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
